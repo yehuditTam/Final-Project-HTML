@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    overflow-x:hidden;
+}
+a {
+    text-decoration: none;
+}
+.title1{
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+.header{
+   width: 100vw;
+   height: 15vh;
+   display: flex;
+   justify-content: center;
+   background-color: white;
+}
+.img1{
+    width: 70vw;
+   height: 15vh;
+}
+.menu{
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(84, 81, 81);
+    justify-content: center;
+    text-align: center;
+}
+.m{
+    width: 25vw;
+    height: 7vh;
+    color: white;
+    align-content: center;
+}
+.m:hover{
+    background-color: rgb(0, 0, 0,0.7);
+    .n1{
+    display: block;
+    color: white;
+    background-color: rgb(0, 0, 0,0.7);
+    }
+    .n:hover{
+        background-color: rgb(84, 81, 81,0.7);
+    }
+}
+.n1{
+    display: none;
+    position: absolute;
+}
+.n{
+    width: 25vw;
+    height: 7vh;
+    font-size: 0.9rem;
+    margin-top: 3vh;
+}
+.eni{
+    position: absolute;
+    width: 30vw;
+    animation: car 2s infinite;
+    left: 0;
+}
+h1{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+table{
+    text-align: center;
+    width: 90vw;
+    height: 40vh;
+    margin-top: 2vh;
+    margin-right: 3vw;
+}
+p{
+    margin: 7vw;
+}
+th{
+    font-size: 1.2rem;
+    background-color: rgb(236, 229, 229);
+}
+@keyframes car{
+    0%{
+        transform: translateX(0)
+    }
+    100%{
+        transform: translateX(100vw)
+    }
+}
+@media only screen and (min-width: 998px){
+   h1{
+    margin-top: 5vh;
+   }
+   th{
+    background-color: rgb(84, 81, 81);
+   }
+   td{
+    background-color: rgb(236, 229, 229);
+   }
+}
